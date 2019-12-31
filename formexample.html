@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="formexample.css">
+   <script src="formexample.js"></script>
+</head>
+<body>
+    
+   <div><center><h1 class="heading">Employee Form</h1></center></div>
+    
+        <div id="error"></div>
+    <form action="success.html" method="get" id="frm">
+    <table class="color margin" border="2" >
+        <tr>
+            <td> <label> Name</label></td>
+            <td> <input type="text" name="empname" id="empname" pattern="[A-Za-z]" required title="Please enter mobile number properly."></td>
+        </tr>
+        <tr>
+            <td><label  > Employee Code </label></td>
+            <td> <input type="EmployeeCode" name="empcode" id="empcode" pattern="[0-9]" required> </td>
+        </tr>
+        <tr>
+            <td> <label> Department</label></td>
+            <td> <input type="radio"name="dept" value="Admin">Admin<br>
+           <input type="radio"name="dept" value="HR">HR<br>
+          <input type="radio"name="dept" value="Technical">Technical<br>
+             <input type="radio"name="dept" value="Accounts">Accounts</td>
+        </tr>
+        <tr>
+            <td>
+                date of joining
+            </td>
+            <td>
+                <select id="day" name="day">
+                    <option value="-1">Day</option>
+                    <option value="1">01</option>
+                  <option value="2">02</option>
+                    <option value="3">03</option>
+                   <option value="4">04</option>
+                </select>
+                <select id="month" name="month">
+                    <option value="-1">Month</option>
+                    <option value="1">01</option>
+                  <option value="2">02</option>
+                    <option value="3">03</option>
+                   <option value="4">04</option>
+                </select>
+                <select id="year" name="month">
+                    <option value="-1">Year</option>
+                    <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                   <option value="2019">2019</option>
+                </select>
+                <pre>   dd     mm      yyyy    </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+        <td ><textarea rows="6" cols="18"></textarea> </td>
+        </tr>
+        <tr>
+            <td>Training Program attended</td>
+            <td>
+                <input type="checkbox"name="training">HTML/DHTML<br>
+                <input type="checkbox"name="training">JAVA<br>
+                   <input type="checkbox"name="training">Client/Server<br>
+                   <input type="checkbox"name="training">NET<br>
+                </td>
+        </tr>
+        <tr>
+           <td> <label>Training  program used to attend</label></td>
+         <td>  <select><option>javaScript</option></select></td>
+        </tr>
+        <tr>
+            <td> send the information at</td>
+            <td> <a href="" >empinfo@</a></td>
+        </tr>
+       <tr>
+           <td colspan="2"> <center><input type="button" onclick="validateForm()" value="submit"> </center></td >
+       </tr>
+
+    </table>
+
+</form>
+</body>
+
+</html>

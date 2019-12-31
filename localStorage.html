@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <section id="empname"></section>
+    <section id="company"></section>
+    <section id="city"></section>
+   
+</body>
+<script>
+    var empData = {"empname":"makarand Bhoir", "company":"LTI Mumbai","city":"mumbai"};
+    var strData=JSON.stringify(empData);
+    localStorage.setItem("empdata",strData);
+    var newData=localStorage.getItem("empdata");
+    var newObj=JSON.parse(newData);
+    document.getElementById("empname").innerHTML=newObj.empname;
+    document.getElementById("company").innerHTML=newObj.company;
+    document.getElementById("city").innerHTML=newObj.city;
+</script>
+</html>
